@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_605e829673ed50e5a6c50bb57f375731 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_605e829673ed50e5a6c50bb57f375731" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_605e829673ed50e5a6c50bb57f375731 = L.map(
+                "map_605e829673ed50e5a6c50bb57f375731",
+                {
+                    center: [-31.32921, -54.10164999999999],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a0972e8c04dbb83d7f601430dcc88e9f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a0972e8c04dbb83d7f601430dcc88e9f.addTo(map_605e829673ed50e5a6c50bb57f375731);
+        
+    
+            var marker_10658b82c28cc19dfacd79bb04bfa104 = L.marker(
+                [-31.3301, -54.1065],
+                {
+}
+            ).addTo(map_605e829673ed50e5a6c50bb57f375731);
+        
+    
+            var icon_d4e34173a97b622e7c1689daa111af0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03604cf0cfb3e7d5bb4b92fe0290f2e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6de0d4a5828fa48daf030b9b266e7fd4 = $(`<div id="html_6de0d4a5828fa48daf030b9b266e7fd4" style="width: 100.0%; height: 100.0%;"><b>Escola Central A</b></div>`)[0];
+                popup_03604cf0cfb3e7d5bb4b92fe0290f2e4.setContent(html_6de0d4a5828fa48daf030b9b266e7fd4);
+            
+        
+
+        marker_10658b82c28cc19dfacd79bb04bfa104.bindPopup(popup_03604cf0cfb3e7d5bb4b92fe0290f2e4)
+        ;
+
+        
+    
+    
+                marker_10658b82c28cc19dfacd79bb04bfa104.setIcon(icon_d4e34173a97b622e7c1689daa111af0e);
+            
+    
+            var marker_c8b8d8501d7ebcec21a48dd868b3146b = L.marker(
+                [-31.328, -54.102],
+                {
+}
+            ).addTo(map_605e829673ed50e5a6c50bb57f375731);
+        
+    
+            var icon_1d7383cd51473cf76d5a2d08c02d3ddf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0748382f073117dc3d967fb05d90bfa9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_073fd6c3569da408405af627ee6dede1 = $(`<div id="html_073fd6c3569da408405af627ee6dede1" style="width: 100.0%; height: 100.0%;"><b>Escola Central B</b></div>`)[0];
+                popup_0748382f073117dc3d967fb05d90bfa9.setContent(html_073fd6c3569da408405af627ee6dede1);
+            
+        
+
+        marker_c8b8d8501d7ebcec21a48dd868b3146b.bindPopup(popup_0748382f073117dc3d967fb05d90bfa9)
+        ;
+
+        
+    
+    
+                marker_c8b8d8501d7ebcec21a48dd868b3146b.setIcon(icon_1d7383cd51473cf76d5a2d08c02d3ddf);
+            
+    
+            var marker_9dc5f58e4bfb8190815033d7d6fe0c8a = L.marker(
+                [-31.315, -54.11],
+                {
+}
+            ).addTo(map_605e829673ed50e5a6c50bb57f375731);
+        
+    
+            var icon_910044e3c56b8fb3e5a9a14a3e4dd3d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b42c39ae63aab5d0812923c1d3d3084b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2e6a2f951c2588d4922e8f5e335052a = $(`<div id="html_c2e6a2f951c2588d4922e8f5e335052a" style="width: 100.0%; height: 100.0%;"><b>Escola Zona Norte</b></div>`)[0];
+                popup_b42c39ae63aab5d0812923c1d3d3084b.setContent(html_c2e6a2f951c2588d4922e8f5e335052a);
+            
+        
+
+        marker_9dc5f58e4bfb8190815033d7d6fe0c8a.bindPopup(popup_b42c39ae63aab5d0812923c1d3d3084b)
+        ;
+
+        
+    
+    
+                marker_9dc5f58e4bfb8190815033d7d6fe0c8a.setIcon(icon_910044e3c56b8fb3e5a9a14a3e4dd3d3);
+            
+    
+            var marker_b4868d89a7e7c2b83ab777d14f483ba8 = L.marker(
+                [-31.319, -54.095],
+                {
+}
+            ).addTo(map_605e829673ed50e5a6c50bb57f375731);
+        
+    
+            var icon_4e9435f6a1d2d733b95b26c5e5bc341a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed019a2736b68d2bbf6029810afdc4b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b855a563d0eaff261103347852530333 = $(`<div id="html_b855a563d0eaff261103347852530333" style="width: 100.0%; height: 100.0%;"><b>Escola Menno Fiege</b></div>`)[0];
+                popup_ed019a2736b68d2bbf6029810afdc4b9.setContent(html_b855a563d0eaff261103347852530333);
+            
+        
+
+        marker_b4868d89a7e7c2b83ab777d14f483ba8.bindPopup(popup_ed019a2736b68d2bbf6029810afdc4b9)
+        ;
+
+        
+    
+    
+                marker_b4868d89a7e7c2b83ab777d14f483ba8.setIcon(icon_4e9435f6a1d2d733b95b26c5e5bc341a);
+            
+    
+            var marker_d5794891f36771339d05b352cafdd66b = L.marker(
+                [-31.338, -54.122],
+                {
+}
+            ).addTo(map_605e829673ed50e5a6c50bb57f375731);
+        
+    
+            var icon_d49f54bfa82425c5379be1461abaa8f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59b3c3c5990b4566eb92219ea9efcfc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03d246082228aa4ab55256541a97a632 = $(`<div id="html_03d246082228aa4ab55256541a97a632" style="width: 100.0%; height: 100.0%;"><b>Escola Passo Pedras</b></div>`)[0];
+                popup_59b3c3c5990b4566eb92219ea9efcfc3.setContent(html_03d246082228aa4ab55256541a97a632);
+            
+        
+
+        marker_d5794891f36771339d05b352cafdd66b.bindPopup(popup_59b3c3c5990b4566eb92219ea9efcfc3)
+        ;
+
+        
+    
+    
+                marker_d5794891f36771339d05b352cafdd66b.setIcon(icon_d49f54bfa82425c5379be1461abaa8f8);
+            
+    
+            var marker_f15a68ca3b4a787789518e4a6e6467bd = L.marker(
+                [-31.348, -54.085],
+                {
+}
+            ).addTo(map_605e829673ed50e5a6c50bb57f375731);
+        
+    
+            var icon_232240a557e2f618703a86abec74b113 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef4e74695dcb9d869c8f53a20080de66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d13e4cbe7c08ce8f5b682a739ac7d37 = $(`<div id="html_6d13e4cbe7c08ce8f5b682a739ac7d37" style="width: 100.0%; height: 100.0%;"><b>Escola Morgado Rosa</b></div>`)[0];
+                popup_ef4e74695dcb9d869c8f53a20080de66.setContent(html_6d13e4cbe7c08ce8f5b682a739ac7d37);
+            
+        
+
+        marker_f15a68ca3b4a787789518e4a6e6467bd.bindPopup(popup_ef4e74695dcb9d869c8f53a20080de66)
+        ;
+
+        
+    
+    
+                marker_f15a68ca3b4a787789518e4a6e6467bd.setIcon(icon_232240a557e2f618703a86abec74b113);
+            
+    
+            var marker_0b764d32af532d922eafb2f37985f476 = L.marker(
+                [-31.325, -54.082],
+                {
+}
+            ).addTo(map_605e829673ed50e5a6c50bb57f375731);
+        
+    
+            var icon_35d5d62c82fdb1dfd3ac7933d8a1102a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21df441ab45351d31c32c0d141a6f35d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_281275609cb03d2d19d7eefa0352fe64 = $(`<div id="html_281275609cb03d2d19d7eefa0352fe64" style="width: 100.0%; height: 100.0%;"><b>Escola Zona Leste</b></div>`)[0];
+                popup_21df441ab45351d31c32c0d141a6f35d.setContent(html_281275609cb03d2d19d7eefa0352fe64);
+            
+        
+
+        marker_0b764d32af532d922eafb2f37985f476.bindPopup(popup_21df441ab45351d31c32c0d141a6f35d)
+        ;
+
+        
+    
+    
+                marker_0b764d32af532d922eafb2f37985f476.setIcon(icon_35d5d62c82fdb1dfd3ac7933d8a1102a);
+            
+    
+            var marker_265a4f53d24446cf644633fb565e6307 = L.marker(
+                [-31.342, -54.099],
+                {
+}
+            ).addTo(map_605e829673ed50e5a6c50bb57f375731);
+        
+    
+            var icon_1514c1d10f30c3b539028fe616034591 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8682780705b03d586d9b2282c741efe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9b9713658bcc7ea43a6f8f27b6f45d3 = $(`<div id="html_c9b9713658bcc7ea43a6f8f27b6f45d3" style="width: 100.0%; height: 100.0%;"><b>Escola Industrial</b></div>`)[0];
+                popup_e8682780705b03d586d9b2282c741efe.setContent(html_c9b9713658bcc7ea43a6f8f27b6f45d3);
+            
+        
+
+        marker_265a4f53d24446cf644633fb565e6307.bindPopup(popup_e8682780705b03d586d9b2282c741efe)
+        ;
+
+        
+    
+    
+                marker_265a4f53d24446cf644633fb565e6307.setIcon(icon_1514c1d10f30c3b539028fe616034591);
+            
+    
+            var marker_548d11c2f393635198fd81f6d2df6faf = L.marker(
+                [-31.312, -54.125],
+                {
+}
+            ).addTo(map_605e829673ed50e5a6c50bb57f375731);
+        
+    
+            var icon_678cdc28dd5a38ef2b4f3e654564bce5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02eb5b337fb808d51d62681c30c1cf64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_476119cdd11e6250f4b76b1c986c9190 = $(`<div id="html_476119cdd11e6250f4b76b1c986c9190" style="width: 100.0%; height: 100.0%;"><b>Escola Castro Alves</b></div>`)[0];
+                popup_02eb5b337fb808d51d62681c30c1cf64.setContent(html_476119cdd11e6250f4b76b1c986c9190);
+            
+        
+
+        marker_548d11c2f393635198fd81f6d2df6faf.bindPopup(popup_02eb5b337fb808d51d62681c30c1cf64)
+        ;
+
+        
+    
+    
+                marker_548d11c2f393635198fd81f6d2df6faf.setIcon(icon_678cdc28dd5a38ef2b4f3e654564bce5);
+            
+    
+            var marker_4f1bc58d98e42121a8e36ab1f9fc0527 = L.marker(
+                [-31.335, -54.09],
+                {
+}
+            ).addTo(map_605e829673ed50e5a6c50bb57f375731);
+        
+    
+            var icon_28e8af711e663241f54bded610083974 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65df217dc2d0143bf770b1b03a18e405 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56ab4ce1fca9a4e486b1aa9426101908 = $(`<div id="html_56ab4ce1fca9a4e486b1aa9426101908" style="width: 100.0%; height: 100.0%;"><b>Escola Getulio Vargas</b></div>`)[0];
+                popup_65df217dc2d0143bf770b1b03a18e405.setContent(html_56ab4ce1fca9a4e486b1aa9426101908);
+            
+        
+
+        marker_4f1bc58d98e42121a8e36ab1f9fc0527.bindPopup(popup_65df217dc2d0143bf770b1b03a18e405)
+        ;
+
+        
+    
+    
+                marker_4f1bc58d98e42121a8e36ab1f9fc0527.setIcon(icon_28e8af711e663241f54bded610083974);
+            
+</script>
+</html>
