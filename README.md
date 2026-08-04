@@ -38,7 +38,7 @@ Para que o servidor OTP e os scripts Python se comuniquem corretamente, estrutur
 ├── 📄 otimizador_escola_real.py   # Motor do Algoritmo Genético (Permutação/Swap)
 ├── 📄 gerar_mapa_isolados.py      # Gerador do mapa interativo de vazios urbanos
 └── 📂 otp_servidor/
-     ├── ☕ otp-2.4.0-shaded.jar    # Executável do OpenTripPlanner
+     ├── ☕ otp-shaded-2.9.0.jar    # Executável do OpenTripPlanner
      └── 📂 bage_dados/
           ├── 🗺️ sul-latest.osm.pbf  # Malha viária (OpenStreetMap)
           └── 🚌 gtfs_bage.zip      # Tabela de ônibus e horários (GTFS)
@@ -54,13 +54,13 @@ cd otp_servidor
 **A. Construir o Grafo de Roteamento (Executar apenas na primeira vez)**
 Combina o mapa viário com as linhas de ônibus para criar o grafo de transporte:
 ```bash
-java -Xmx4G -jar otp-2.4.0-shaded.jar --build --save bage_dados
+java -Xmx4G -jar otp-shaded-2.9.0.jar --build --save bage_dados
 ```
 
 **B. Iniciar o Servidor**
 Carrega o grafo compilado na memória e abre a API local:
 ```bash
-java -Xmx4G -jar otp-2.4.0-shaded.jar --load bage_dados
+java -Xmx4G -jar otp-shaded-2.9.0.jar --load bage_dados
 ```
 > ⚠️ **Atenção:** Mantenha este terminal aberto. O servidor estará pronto quando exibir a mensagem `Grizzly server running`. Você pode testar a interface acessando `http://localhost:8080` no navegador.
 
